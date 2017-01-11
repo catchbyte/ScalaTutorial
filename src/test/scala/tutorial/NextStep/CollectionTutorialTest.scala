@@ -67,15 +67,11 @@ class CollectionTutorialTest extends JUnit3Suite{
     // into (1).->("Go to island.")
     // -> (actually calling a method named -> on an integer with the value 1,
     // passing in a string with the value "Go to island".
+    // The Scala echanism that allows you to invoke -> on any object.
     val treasureMap = mutable.Map[Int, String]()
     treasureMap += (1 -> "Go to island.")
     treasureMap += (2 -> "Find big x on ground.")
     treasureMap += (3 -> "Dig")
     println(treasureMap(2))
   }
-
-
-
-
-
 }

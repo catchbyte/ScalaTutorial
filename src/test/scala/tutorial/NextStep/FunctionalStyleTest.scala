@@ -33,7 +33,6 @@ class FunctionalStyleTest extends JUnit3Suite {
         i += 1
       }
     }
-
     printNumbers()
   }
 
@@ -61,7 +60,4 @@ class FunctionalStyleTest extends JUnit3Suite {
     printNumbersAnotherWay(Array("HelloWorld", "Jeff Kim"))
     assert("Hi,Jeff" == formatWord(Array("Hi", "Jeff")))
   }
-
-
-
 }

@@ -8,9 +8,14 @@ import org.scalatest.junit.JUnit3Suite
   */
 class ListTutorialTest extends JUnit3Suite {
 
+  // You don't need to say new List because "List.apply()" is
+  // defined as a factory method on the scala.List companion object.
   val oneTwo = List(1, 2)
   val twoThree = List(2, 3)
   val threeFour = List(3, 4)
+
+  // Nil at the end is that :: is defined on class List.
+  // If you try to just say 1 :: 2 :: 3, it won't compile because 3 is an Int, which doesn't have a :: method.
   val thrill = "Will" :: "fill" :: "until" :: Nil
 
   /*
