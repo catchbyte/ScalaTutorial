@@ -1,11 +1,8 @@
-package tutorial.NextStep
+package tutorial.NextStepTest
 
 import org.junit.Test
 import org.scalatest.junit.JUnit3Suite
 
-/**
-  * Created by JeffMinsungKim on 10/01/2017.
-  */
 class LoopTutorialTest extends JUnit3Suite {
 
   // val, the variable can not be reassigned, but the object to which it refers could potentially still be changed.

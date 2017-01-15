@@ -1,11 +1,8 @@
-package tutorial.Operations
+package tutorial.OperationsTest
 
 import org.junit.Test
 import org.scalatest.junit.JUnit3Suite
 
-/**
-  * Created by JeffMinsungKim on 11/01/2017.
-  */
 class OperationTutorialTest extends JUnit3Suite{
 
   @Test

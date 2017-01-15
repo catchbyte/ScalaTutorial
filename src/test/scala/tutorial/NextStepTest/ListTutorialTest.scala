@@ -1,11 +1,8 @@
-package tutorial.NextStep
+package tutorial.NextStepTest
 
 import org.junit.Test
 import org.scalatest.junit.JUnit3Suite
 
-/**
-  * Created by JeffMinsungKim on 10/01/2017.
-  */
 class ListTutorialTest extends JUnit3Suite {
 
   // You don't need to say new List because "List.apply()" is

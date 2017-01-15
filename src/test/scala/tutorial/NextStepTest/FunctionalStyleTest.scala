@@ -1,13 +1,10 @@
-package tutorial.NextStep
+package tutorial.NextStepTest
 
 import java.time.temporal.JulianFields
 
 import org.junit.Test
 import org.scalatest.junit.JUnit3Suite
 
-/**
-  * Created by JeffMinsungKim on 11/01/2017.
-  */
 class FunctionalStyleTest extends JUnit3Suite {
 
   /*
@@ -60,4 +57,33 @@ class FunctionalStyleTest extends JUnit3Suite {
     printNumbersAnotherWay(Array("HelloWorld", "Jeff Kim"))
     assert("Hi,Jeff" == formatWord(Array("Hi", "Jeff")))
   }
+
+  // Refactoring imperative-style code
+  // Refactor the imperative approach to printing a multiplication table.
+
+  // Returns a row as a sequence
+  @Test
+  def testMakeRowSequence(): Unit = {
+    def makeRowSeq(row: Int) =
+      for (col <- 1 to 10) yield {
+        val prod = (row * col).toString
+        val padding = " " * (4 - prod.length)
+        padding + prod
+      }
+
+    // Returns a row as a string
+    def makeRow(row: Int) = makeRowSeq(row).mkString
+
+    // Returns table as a string with one row per line
+    def multiTable() = {
+      val tableSeq = for (row <- 1 to 10) // a sequence of row strings
+        yield makeRow(row)
+
+      tableSeq.mkString("\n")
+    }
+  }
+  // Invoking multiTable has a side effect: printing a multiplication table
+  // to the standar output.
+
+
 }

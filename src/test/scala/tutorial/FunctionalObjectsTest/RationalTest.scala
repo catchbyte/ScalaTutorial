@@ -1,11 +1,8 @@
-package tutorial.FunctionalObjects
+package tutorial.FunctionalObjectsTest
 
 import org.junit.Test
 import org.scalatest.junit.JUnit3Suite
 
-/**
-  * Created by JeffMinsungKim on 12/01/2017.
-  */
 class RationalTest extends JUnit3Suite {
   val aa = 10
   val bb = 20
@@ -99,5 +96,4 @@ class RationalTest extends JUnit3Suite {
   // This defines a conversion method from Int to Rational.
   // The implicit modifier in front of the method
   // tells the copiler to apply it automatically in a number of situations.
-
 }

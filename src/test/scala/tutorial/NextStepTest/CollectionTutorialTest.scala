@@ -1,4 +1,4 @@
-package tutorial.NextStep
+package tutorial.NextStepTest
 
 import org.junit.Test
 import org.scalatest.junit.JUnit3Suite
@@ -6,9 +6,6 @@ import org.scalatest.junit.JUnit3Suite
 import scala.collection.immutable.HashSet
 import scala.collection.mutable
 
-/**
-  * Created by JeffMinsungKim on 11/01/2017.
-  */
 class CollectionTutorialTest extends JUnit3Suite{
 
   /*
